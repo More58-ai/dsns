@@ -9,14 +9,14 @@
     body {
       margin: 0;
       font-family: "Russo One", sans-serif;
-      background: #111; /* чорний фон */
-      color: #ddd;      /* сірий текст */
+      background: #111;
+      color: #ddd;
     }
 
     header {
       text-align: center;
       padding: 20px;
-      background: #1a1a1a; /* темно-сірий блок */
+      background: #1a1a1a;
       box-shadow: 0 0 20px rgba(255,0,0,0.3);
     }
 
@@ -31,18 +31,31 @@
       filter: drop-shadow(0 0 25px red);
     }
 
-    /* кнопка під логотипом */
+    /* Транскрипція */
+    .transcription {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #bbb;
+      letter-spacing: 1px;
+    }
+
+    /* блок кнопок */
+    .btn-group {
+      margin-top: 20px;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 15px;
+      margin: 8px;
       background: transparent;
       color: #ff4d4d;
       border: 2px solid #ff4d4d;
       padding: 12px 28px;
       border-radius: 6px;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       cursor: pointer;
       transition: all 0.3s ease;
+      text-decoration: none;
     }
 
     .btn:hover {
@@ -133,8 +146,12 @@
 
   <header>
     <img src="https://i.postimg.cc/YSfVMCLd/removebg-preview.png" alt="ДСНС Логотип">
-    <br>
-    <button class="btn" onclick="openModal()">Анкета на вступ</button>
+    <div class="transcription">Державна служба України з надзвичайних ситуацій</div>
+    
+    <div class="btn-group">
+      <button class="btn" onclick="openModal()">Анкета на вступ</button>
+      <a href="https://more58-ai.github.io/dsns/general/" target="_blank" class="btn">Старший особовий склад</a>
+    </div>
   </header>
 
   <div class="content">
